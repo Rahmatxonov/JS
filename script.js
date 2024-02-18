@@ -10,7 +10,7 @@ start.addEventListener("click", () => {
     number++;
     num.classList.add("num");
     num.textContent = `${number}`;
-  }, 1000);
+  }, 2000);
 });
 
 pouse.addEventListener("click", () => {
