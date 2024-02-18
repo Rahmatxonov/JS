@@ -1,35 +1,43 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Big Shoulders Display", display;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
+  background: url(./img/clock.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+}
+.hour,
+.minutes,
+.seconds,
+.day,
+.month,
+.year {
+  color: #fff;
+}
+.data {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(
-    45deg,
-    hsl(240deg 100% 20%) 0%,
-    hsl(289deg 100% 21%) 11%,
-    hsl(315deg 100% 27%) 22%,
-    hsl(329deg 100% 36%) 33%,
-    hsl(337deg 100% 43%) 44%,
-    hsl(357deg 91% 59%) 56%,
-    hsl(17deg 100% 59%) 67%,
-    hsl(34deg 100% 53%) 78%,
-    hsl(45deg 100% 50%) 89%,
-    hsl(55deg 100% 50%) 100%
-  );
 }
-.start,
-.pouse {
-  border: none;
-  padding: 6px 12px;
-  margin-top: 20px;
+.card {
+  display: flex;
+  column-gap: 20px;
 }
-.num {
-  color: rgb(20, 255, 20);
+.time {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 20px;
+  font-size: 70px;
 }
